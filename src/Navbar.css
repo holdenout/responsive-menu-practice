@@ -7,12 +7,29 @@
   font-size: large;
 }
 
+.inner-nav-container {
+  display: flex;
+  width: 100%;
+}
+
 .nav-item {
   flex-grow: 2;
   color: inherit;
   padding: 10px;
+  cursor: pointer;
 }
 
 .logo {
   flex-grow: 1;
+  text-align: left;
+}
+
+.burger {
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .inner-nav-container {
+    flex-direction: column;
+  }
 }
