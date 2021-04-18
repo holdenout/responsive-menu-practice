@@ -4,13 +4,13 @@ import './Navbar.css';
 
 export const Navbar = () => {
   return (
-    <div className="nav-container">
-      <FontAwesomeIcon icon={faCookieBite} />
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#menu">Menu</a>
-      <a href="#contact">Contact</a>
-    </div>
+    <nav className="nav-container">
+      <div className="nav-item icon"><FontAwesomeIcon icon={faCookieBite} /></div>
+      <div className="nav-item">Home</div>
+      <div className="nav-item">About</div>
+      <div className="nav-item">Menu</div>
+      <div className="nav-item">Contact</div>
+    </nav>
   );
 };
 

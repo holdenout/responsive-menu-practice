@@ -1,4 +1,18 @@
 .nav-container {
   display: flex;
   align-items: center;
+  width: 100%;
+  background: #eee;
+  padding: 10px;
+  font-size: large;
+}
+
+.nav-item {
+  flex-grow: 2;
+  color: inherit;
+  padding: 10px;
+}
+
+.icon {
+  flex-grow: 1;
 }
