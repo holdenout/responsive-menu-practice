@@ -10,26 +10,27 @@ import "./Navbar.css";
 
 const NavBarMainIcons = ({ width, menuOpen, setMenuOpen }) => {
   return (
-    <div className="nav-main-icons">
+    <div className="nav-item nav-main-icons">
       <div className="nav-item logo">
         <FontAwesomeIcon icon={faCookieBite} />
       </div>
+
       {width <= 600 && !menuOpen && (
         <div
           className="nav-item burger"
           role="button"
-          onClick={() => setMenuOpen(!menuOpen)}
         >
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon className="burger" onClick={() => setMenuOpen(!menuOpen)} icon={faBars} />
         </div>
       )}
+
       {width <= 600 && menuOpen && (
         <div
           className="nav-item close"
           role="button"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <FontAwesomeIcon icon={faTimes} />
+          <FontAwesomeIcon className="close" icon={faTimes} />
         </div>
       )}
     </div>
