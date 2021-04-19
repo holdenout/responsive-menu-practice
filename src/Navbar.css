@@ -11,6 +11,12 @@
   width: 100%;
 }
 
+.nav-main-icons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 .nav-item {
   flex-grow: 2;
   color: inherit;
@@ -18,18 +24,17 @@
   cursor: pointer;
 }
 
-.nav-main-icons > div {
+.nav-main-icons > * {
   cursor: auto;
+  flex-grow: 1;
 }
 
 .logo {
-  flex-grow: 1;
   text-align: left;
   cursor: pointer;
 }
 
 .burger, .close {
-  flex-grow: 1;
   text-align: right;
   cursor: pointer;
 }
@@ -37,11 +42,5 @@
 @media only screen and (max-width: 600px) {
   .nav-container, .inner-nav-container {
     flex-direction: column;
-  }
-
-  .nav-main-icons {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
   }
 }

@@ -12,15 +12,16 @@ const NavBarMainIcons = ({ width, menuOpen, setMenuOpen }) => {
   return (
     <div className="nav-item nav-main-icons">
       <div className="nav-item logo">
-        <FontAwesomeIcon icon={faCookieBite} />
+        <FontAwesomeIcon className="logo" icon={faCookieBite} />
       </div>
 
       {width <= 600 && !menuOpen && (
-        <div
-          className="nav-item burger"
-          role="button"
-        >
-          <FontAwesomeIcon className="burger" onClick={() => setMenuOpen(!menuOpen)} icon={faBars} />
+        <div className="nav-item burger" role="button">
+          <FontAwesomeIcon
+            className="burger"
+            onClick={() => setMenuOpen(!menuOpen)}
+            icon={faBars}
+          />
         </div>
       )}
 
