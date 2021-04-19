@@ -24,12 +24,18 @@
   text-align: left;
 }
 
-.burger {
+.burger, .close {
   text-align: right;
 }
 
 @media only screen and (max-width: 600px) {
-  .inner-nav-container {
+  .nav-container, .inner-nav-container {
     flex-direction: column;
+  }
+
+  .nav-main-icons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
 }
